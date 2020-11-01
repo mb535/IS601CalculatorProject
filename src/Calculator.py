@@ -16,7 +16,8 @@ def multiplication(a, b):
     return c
 
 def division(a, b):
-    c = a/b
+    c = (b/a)
+    c = round(float(c), 9)
     return c
 
 def square(a):
@@ -24,7 +25,7 @@ def square(a):
     return c
 
 def square_root(a):
-    c = a**(.5)
+    c = a ** .5
     return c
 
 
@@ -49,6 +50,7 @@ class Calculator:
 
     def divide(self, a, b):
         self.result = division(a, b)
+        return self.result
 
     def square(self, a):
         self.result = square(a)
@@ -56,3 +58,4 @@ class Calculator:
 
     def square_root(self, a):
         self.result = square_root(a)
+        return self.result
